@@ -77,11 +77,10 @@ let appData = {
 			console.log(i + 1 + ': ' + item);
 		});
 	},
-	showAppData: function() {
-		for (let key in appData) {
-			console.log('Наша программа включает следующие данные: ' + key); 
-		}
-	} 
 };
+
+for (let key in appData) {
+	console.log('Наша программа включает следующие данные: ' + key + ' — ' + appData[key]); 
+}
 
 
